@@ -1,0 +1,22 @@
+---
+// to eksempler på hvordan man kan kalde props
+
+// const header = Astro.props.header;
+// const text = Astro.props.text;
+
+const { header } = Astro.props;
+---
+
+<article>
+  <h2>{header}</h2>
+  <p>
+    kortere end Lorem ipsum do
+  </p>
+  <slot />
+</article>
+
+<style>
+    P{
+        color: blue;
+    }
+</style>

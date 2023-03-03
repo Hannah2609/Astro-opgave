@@ -1,15 +1,39 @@
 ---
+import Card from "../components/card.astro";
+import Nav from "../components/nav.astro";
+import Button from "../components/button.astro";
+// <!-- hvis man skal importe css herfra -->
+// import "../styles/style.css"
 ---
 
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Astro</title>
+  </head>
+  <body>
+    <h1>Astro</h1>
+    <main>
+      <Nav />
+
+		<Button type="primary" size="medium"> Text </Button>
+
+		<Button type="secondary" size="large"> Text </Button>
+
+
+
+
+      <Card header="hej verden">
+        <p>hej verden</p>
+        <button>Klik her</button>
+      </Card>
+
+
+    </main>
+  </body>
 </html>
